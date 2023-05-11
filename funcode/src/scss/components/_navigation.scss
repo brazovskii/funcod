@@ -1,0 +1,21 @@
+.nav__body {
+  @include flex-s-b;
+  padding-top: 6.5rem;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    .nav__link {
+      margin: 0 3rem 0;
+      text-decoration: none;
+      @include text-s(Arial, 1.6rem, bold, black, 2.8rem);
+
+      &:hover {
+        color: $color-button;
+        border-bottom: 0.5rem solid $color-button;
+      }
+    }
+  }
+}
